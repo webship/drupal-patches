@@ -24,8 +24,8 @@
     "require": {
         "composer/installers": "~2",
         "cweagans/composer-patches": "~2.0",
-        "drupal/core-composer-scaffold": "~11.4.0",
-        "drupal/core-recommended": "~11.4.0",
+        "drupal/core-composer-scaffold": "^11.4.9@dev",
+        "drupal/core-recommended": "^11.4.9@dev",
         "oomphinc/composer-installers-extender": "~2",
         "webship/drupal-patches": "11.4.x-dev"
     },
