@@ -2,7 +2,7 @@
 
 [![Test patches (12.0.x)](https://github.com/webship/drupal-patches/actions/workflows/test-patches.yml/badge.svg?branch=12.0.x)](https://github.com/webship/drupal-patches/actions/workflows/test-patches.yml?query=branch%3A12.0.x)
 
-> **Note:** the `12.0.x` branch is a forward-compatibility placeholder for Drupal core ~12.0.0. It carries no Drupal core patches yet — add re-rolled patches here when that core line needs them (see docs/adding-a-core-version.md).
+> **Note:** the `12.0.x` branch carries the Drupal core patches that apply to Drupal 12.0 (checked on 12.0.0-beta1). Patches that need a re-roll for 12 are not carried yet (see CHANGELOG.md).
 
 
 > **Why this package:** `webship/drupal-patches` is required by [`webship/patches`](https://github.com/webship/patches) so that [Webship](https://www.drupal.org/project/webship) can upgrade to the latest Drupal core versions. It maintains the right set of working Drupal **core** patches **per Drupal core version** (one branch per major.minor), so each Webship line automatically gets the patches that apply to its Drupal core.
@@ -44,7 +44,7 @@ branches stay in git (nothing is deleted) but no longer receive new patches, re-
 
 | Drupal core | Branch    | Patch count | Status |
 |-------------|-----------|-------------|--------|
-| ~12.0.0 | `12.0.x` | 0 | Upcoming — forward-compat placeholder, no patches yet |
+| ~12.0.0 | `12.0.x` | 17 | Drupal 12.0 (beta) |
 | ~11.4.0 | `11.4.x` | 22 | **Supported** (bugfix + security) |
 | ~11.3.0 | `11.3.x` | 20 | **Supported** (security-only) |
 | ~10.6.0 | `10.6.x` | 17 | **Supported** (security-only, final Drupal 10 minor) |

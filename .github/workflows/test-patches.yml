@@ -30,7 +30,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: '8.5'
           coverage: none
 
       - name: Every patch URL resolves to a real patch file
@@ -52,7 +52,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: '8.5'
           extensions: gd, mbstring, dom, simplexml, tokenizer, curl, zip
           tools: composer:v2
           coverage: none
