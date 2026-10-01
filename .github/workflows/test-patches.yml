@@ -30,7 +30,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: '8.5'
           coverage: none
 
       - name: Every patch URL resolves to a real patch file
@@ -52,7 +52,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: '8.5'
           extensions: gd, mbstring, dom, simplexml, tokenizer, curl, zip
           tools: composer:v2
           coverage: none
@@ -96,6 +96,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: install-log-${{ github.event.pull_request.number && format('pr-{0}', github.event.pull_request.number) || github.ref_name }}-composer-patches-${{ matrix.composer-patches }}
+          name: install-log-${{ github.event.pull_request.number && format('pr-{0}', github.event.pull_request.number) || github.run_id }}-composer-patches-${{ matrix.composer-patches }}
           path: tests/build/install.log
           if-no-files-found: ignore
